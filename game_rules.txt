@@ -1,0 +1,67 @@
+Document to explain and define the exact technical and non-technical game particularities. I will write it first in spanish then in english at the bottom.
+
+## GAME RULES
+
+Actores
+Piezas
+Existen varias piezas en el juego, que consisten en figuras formadas a partir de la union de 4 cubos/cuadros, estas figuras son:
+- L, formada por 3 cubos en vertical y uno en horizontal unido a uno de sus cubos en los extremos por la derecha
+
++
++
++ +
+
+- L invertida, la misma que la L pero con unida a la izquierda
+  
+  +
+  +
++ +
+
+- Cubo, cuadrado formado por los cuatro cuadrados
+
++ +
++ +
+
+- T, figura de tres piezas horizontales y una vertical pegada a la pieza del centro.
+
++ +
++ +
+
+- I, figura con las cuatro piezas unidas verticalmente
+
++
++
++
++
+
+- S, Figura con dos pares de piezas unidas horizontalmente puestas una sobre la otra por una pieza de separacion a la izquierda
+
+  + +
++ +
+
+- S invertida, igual que la S pero la separacion es hacia la derecha
+
++ +
+  + +
+
+Sobre las piezas.
+Cada nueva pieza se origina aleatoriamente del set de piezas disponibles, y se colocan en el tope del area de juego cuando ya no hay piezas cayendo.
+
+Jugador
+El jugador consta de 5 botones para su control, compuestos por las siguientes teclas en un teclado estandar:
+Flecha Derecha. Cada click permite al jugador mover horizontalmente una pieza en movimiento, un cuadro hacia la derecha.
+Flecha Izquierda. Cada click permite al jugador mover horizontalmente una pieza en movimiento, un cuadro hacia la izquierda.
+Flecha Arriba. Permite girar la pieza 90º en el sentido de las manecillas del reloj.
+Flecha Abajo. Permite acelerar la caida de la pieza.
+
+Area de Juego
+El area de juego esta definida por un espacio rectangular visto desde el frente, compuesto por un perimetro solido rodeando un area cuadriculada compuesta por 10 cuadros (cuadros de la misma dimension que los que forman las figuras) de ancho por 15 cuadros de alto.
+
+Condiciones de victoria
+No existe victoria en el juego, es infinito
+
+Condiciones de progreso y obtencion de puntos
+El jugador debe lograr rellenar una fila completa o mas del Area de Juego encajando las diferentes piezas, cuando esto ocurra, la fila desaparecera, dejando caer a las filas que cargaba el mismo numero de filas.
+
+Condiciones de derrota
+Las filas acumuladas de figuras sobrepasan el area de juego.

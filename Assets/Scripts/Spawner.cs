@@ -8,11 +8,8 @@ public class Spawner : MonoBehaviour {
 
 	public void spawnNext ()
 	{
-		//Random Index
-		int i = Random.Range (0, groups.Length);
-
 		//Spawn Group at the current Position
-		Instantiate (groups[i],
+		Instantiate (groups[FindObjectOfType<Queue>().next()],
 		             transform.position,
 		             Quaternion.identity);
 	}

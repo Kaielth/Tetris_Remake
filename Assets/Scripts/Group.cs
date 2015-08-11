@@ -10,7 +10,6 @@ public class Group : MonoBehaviour {
 	void Start () {
 		// Default position not valid? Then it's game over
 		if (!isValidGridPos()) {
-			Debug.Log("GAME OVER");
 			Destroy(gameObject);
 		}
 	}
@@ -83,11 +82,11 @@ public class Group : MonoBehaviour {
 		}
 	}
 
-	bool isValidGridPos() {        
+	bool isValidGridPos() {
 		foreach (Transform child in transform) {
 			Vector2 v = Grid.roundVector2(child.position);
 			
-			// Not inside Border?
+			// Not inside Border or Queue Container?
 			if (!Grid.insideBorder(v))
 				return false;
 			

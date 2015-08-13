@@ -11,7 +11,7 @@ Existen varias piezas en el juego, que consisten en figuras formadas a partir de
 +
 + +
 
-- L invertida, la misma que la L pero con unida a la izquierda
+- J, la misma que la L pero con unida a la izquierda
   
   +
   +
@@ -39,7 +39,7 @@ Existen varias piezas en el juego, que consisten en figuras formadas a partir de
   + +
 + +
 
-- S invertida, igual que la S pero la separacion es hacia la derecha
+- Z, igual que la S pero la separacion es hacia la derecha
 
 + +
   + +

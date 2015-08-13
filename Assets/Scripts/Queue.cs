@@ -30,7 +30,7 @@ public class Queue : MonoBehaviour {
 		}
 	}
 
-	//Push a new piece as the newer element and pops the older, also increase the speed after the following pieces spawned: 50, 100, 150, 200 and 250
+	//Push a new piece as the newer element and pops the older
 	private void newPiece (int i)
 	{
 		q[i] = Random.Range (0, groups.Length);
@@ -43,17 +43,17 @@ public class Queue : MonoBehaviour {
 		}
 	}
 
-	//Returns the current piece index in the queue and generate a new one
+	//Returns the current piece index in the queue and generate a new one, increase the speed after the following pieces spawned: 50, 100, 150, 200 and 250
 	public int next ()
 	{
 		history.Add (q[0]);
 		switch(history.Count)
 		{
-		case 5:
-		case 7:
-		case 9:
-		case 11:
-		case 13:
+		case 50:
+		case 100:
+		case 150:
+		case 200:
+		case 250:
 			increaseSpeed();
 			break;
 		}

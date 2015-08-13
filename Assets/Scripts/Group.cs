@@ -10,7 +10,7 @@ public class Group : MonoBehaviour {
 	void Start () {
 		// Default position not valid? Then it's game over
 		if (!isValidGridPos()) {
-			FindObjectOfType<Score>().scoreText = "GAME OVER";
+			FindObjectOfType<Score>().scoreText.text = "GAME OVER";
 			Destroy(gameObject);
 		}
 	}

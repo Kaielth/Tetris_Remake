@@ -9,4 +9,5 @@ Features:
  - Speed of the pieces falling after certain amount of pieces generated. Speed increased at piece 50, 100, 150, 200 and 250.
 
 Preview:
+
 ![preview image of tetris game](https://raw.githubusercontent.com/Kaielth/Tetris_Remake/master/13-8-2015%207.8.29%201.jpg)

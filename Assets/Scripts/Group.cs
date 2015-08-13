@@ -56,7 +56,7 @@ public class Group : MonoBehaviour {
 		}
 		// Fall
 		else if (Input.GetKeyDown(KeyCode.DownArrow) ||
-		         Time.time - lastFall >= 1) {
+		         Time.time - lastFall >= FindObjectOfType<Queue>().TimeFrame) {
 			// Modify position
 			transform.position += new Vector3(0, -1, 0);
 			

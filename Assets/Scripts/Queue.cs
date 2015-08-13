@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Queue : MonoBehaviour {
 
@@ -7,9 +8,12 @@ public class Queue : MonoBehaviour {
 	public int[] q;
 	public int qLimit;
 	public GameObject[] groups;
+	public List<int> history;
+	public float TimeFrame = 1.0f;
 
 	// initialization
 	void Start () {
+		history = new List<int>();
 		qLimit = 3;
 		q = new int[qLimit];
 		fillQ ();
@@ -26,15 +30,34 @@ public class Queue : MonoBehaviour {
 		}
 	}
 
-	//Push a new piece as the newer element and pops the older
+	//Push a new piece as the newer element and pops the older, also increase the speed after the following pieces spawned: 50, 100, 150, 200 and 250
 	private void newPiece (int i)
 	{
 		q[i] = Random.Range (0, groups.Length);
 	}
 
+	void increaseSpeed(){
+		if(TimeFrame > 0.3f)
+		{
+			TimeFrame = TimeFrame - 0.2f;
+		}
+	}
+
 	//Returns the current piece index in the queue and generate a new one
 	public int next ()
 	{
+		history.Add (q[0]);
+		switch(history.Count)
+		{
+		case 5:
+		case 7:
+		case 9:
+		case 11:
+		case 13:
+			increaseSpeed();
+			break;
+		}
+
 		int currentPiece = q[0];
 		flushQueue ();
 		fillQ (qLimit-1);
